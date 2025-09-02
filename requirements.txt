@@ -1,0 +1,11 @@
+# requirements.txt
+streamlit
+pandas
+google-api-python-client
+transformers
+torch
+sastrawi
+scikit-learn
+plotly
+wordcloud
+matplotlib

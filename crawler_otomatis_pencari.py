@@ -6,11 +6,12 @@ import pandas as pd
 from googleapiclient.discovery import build
 from datetime import datetime, timedelta
 import transformers
+import streamlit as st
 
 # =======================================================================
 # KONFIGURASI UTAMA
 # =======================================================================
-API_KEY = 'apikey'
+API_KEY = st.secrets["youtube_api_key"] # <-- Ganti menjadi seperti ini
 DB_NAME = "youtube_data.db"
 TARGET_TOTAL_COMMENTS = 20000
 

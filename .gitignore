@@ -1,0 +1,8 @@
+# .gitignore
+
+# Sembunyikan file rahasia Streamlit
+.streamlit/secrets.toml
+
+# Sembunyikan database dan file log agar tidak ter-upload
+youtube_data.db
+crawler.log
