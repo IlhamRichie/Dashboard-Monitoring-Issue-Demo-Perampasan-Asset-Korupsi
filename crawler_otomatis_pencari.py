@@ -19,7 +19,7 @@ TARGET_TOTAL_COMMENTS = 20000
 # KONFIGURASI PENCARIAN VIDEO - INI BAGIAN BARUNYA!
 # =======================================================================
 # Gunakan kata kunci yang spesifik. Gunakan | untuk ATAU, "" untuk frasa pasti.
-SEARCH_QUERY = '"demo mahasiswa" | "perampasan asset" | "tolak RUU"'
+SEARCH_QUERY = '"dalang demo" | "perampasan asset" | "demo rusuh"'
 # Berapa banyak video teratas yang ingin diambil ID-nya dari hasil pencarian?
 MAX_SEARCH_RESULTS = 15 
 # Cari video yang diupload dalam 7 hari terakhir untuk menjaga relevansi
