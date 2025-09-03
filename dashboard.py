@@ -2,6 +2,7 @@
 
 import streamlit as st
 import pandas as pd
+import numpy as np
 import sqlite3
 import re
 import os
@@ -54,7 +55,7 @@ def extract_top_phrases(_df_negative: pd.DataFrame, topn: int = 15) -> pd.DataFr
     vectorizer = CountVectorizer(ngram_range=(2, 3), stop_words=list(stopwords))
     X = vectorizer.fit_transform(cleaned)
     phrases = vectorizer.get_feature_names_out()
-    counts = X.toarray().sum(axis=0)
+    counts = np.asarray(X.sum(axis=0)).ravel()
     df_phr = pd.DataFrame({"frasa": phrases, "jumlah": counts})
     df_phr = df_phr.sort_values("jumlah", ascending=False).head(topn)
     return df_phr

@@ -1,43 +1,38 @@
-🚀 Memulai proses monitoring & analisis otomatis pada: 2025-09-03 11:00:44
-🔎 Mencari video dengan kata kunci: '"dalang demo" | "perampasan asset" | "demo rusuh"'...
+🚀 Memulai proses monitoring & analisis otomatis pada: 2025-09-03 22:06:36
+🔎 Mencari video dengan kata kunci: '"dalang demo" | "dpr" | "demo rusuh"'...
 ✅ Berhasil menemukan 15 ID video.
-   -> Mengambil komentar dari video ID: gpHLhjkMR0E
-   -> Mengambil komentar dari video ID: 3FwSeBfl61g
-   -> Mengambil komentar dari video ID: ZuWcCzta-2I
+   -> Mengambil komentar dari video ID: 9zpSVMzPm9A
    -> Mengambil komentar dari video ID: WYRvtIWtYeQ
-   -> Mengambil komentar dari video ID: JdYzGmX-X94
-   -> Mengambil komentar dari video ID: ZqOrvIX5mc4
-   -> Mengambil komentar dari video ID: oW2wjukuYXY
-   -> Mengambil komentar dari video ID: VE04ddub35Y
-   -> Mengambil komentar dari video ID: bNguNSqnvWQ
-   -> Mengambil komentar dari video ID: rGXNbCjIDOo
-Berhasil mengumpulkan total 20037 komentar.
+   -> Mengambil komentar dari video ID: gpHLhjkMR0E
+   -> Mengambil komentar dari video ID: 3Lz8PnFvjhs
+   -> Mengambil komentar dari video ID: 2Gfh-lsZrBA
+   -> Mengambil komentar dari video ID: iRlz7aJMjYs
+   -> Mengambil komentar dari video ID: XDCioau5aeU
+      [ERROR] Gagal mengambil dari video XDCioau5aeU: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=XDCioau5aeU&maxResults=100&textFormat=plainText&key=AIzaSyDVftMTiXsNPqYJAwMrjg0LgvktTqpIWkU&alt=json returned "The video identified by the <code><a href="/youtube/v3/docs/commentThreads/list#videoId">videoId</a></code> parameter has disabled comments.". Details: "[{'message': 'The video identified by the <code><a href="/youtube/v3/docs/commentThreads/list#videoId">videoId</a></code> parameter has disabled comments.', 'domain': 'youtube.commentThread', 'reason': 'commentsDisabled', 'location': 'videoId', 'locationType': 'parameter'}]">
+Traceback (most recent call last):
+  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 106, in scrape_youtube_comments
+    response = request.execute()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=XDCioau5aeU&maxResults=100&textFormat=plainText&key=AIzaSyDVftMTiXsNPqYJAwMrjg0LgvktTqpIWkU&alt=json returned "The video identified by the <code><a href="/youtube/v3/docs/commentThreads/list#videoId">videoId</a></code> parameter has disabled comments.". Details: "[{'message': 'The video identified by the <code><a href="/youtube/v3/docs/commentThreads/list#videoId">videoId</a></code> parameter has disabled comments.', 'domain': 'youtube.commentThread', 'reason': 'commentsDisabled', 'location': 'videoId', 'locationType': 'parameter'}]">
+   -> Mengambil komentar dari video ID: gT36cnjOZR0
+   -> Mengambil komentar dari video ID: _bRCe5onFOk
+   -> Mengambil komentar dari video ID: dnu4V8uSOVk
+   -> Mengambil komentar dari video ID: l9G6mM3bS-w
+   -> Mengambil komentar dari video ID: TMj-tTUFxGQ
+   -> Mengambil komentar dari video ID: HtEi6D-mq_Q
+   -> Mengambil komentar dari video ID: L3Vx0g4lq_A
+   -> Mengambil komentar dari video ID: efDnOhMpgD8
+Berhasil mengumpulkan total 9242 komentar.
 🧠 Memulai analisis sentimen pada data yang di-crawl...
 WARNING:tensorflow:From C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
 
---- Logging error ---
-Traceback (most recent call last):
-  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
-    stream.write(msg + self.terminator)
-    ^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'write'
-Call stack:
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 155, in <module>
-    main()
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 146, in main
-    df_analyzed = analyze_sentiment_in_batch(df_comments)
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 44, in analyze_sentiment_in_batch
-    sentiment_analyzer = transformers.pipeline(
-  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\__init__.py", line 1178, in pipeline
-    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
-  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\text_classification.py", line 85, in __init__
-    super().__init__(**kwargs)
-  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 975, in __init__
-    logger.warning(f"Device set to use {self.device}")
-Message: 'Device set to use cpu'
-Arguments: ()
    Model AI berhasil dimuat.
 ✅ Analisis sentimen selesai.
-Menghapus tabel 'comments' lama dan menyimpan 20037 data baru...
+Menghapus tabel 'comments' lama dan menyimpan 9242 data baru...
 ✅ Data berhasil disimpan di 'E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\youtube_data.db'
 ✨ Proses monitoring & analisis selesai.
