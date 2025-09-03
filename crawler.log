@@ -1,22 +1,17 @@
-🚀 Memulai proses monitoring & analisis otomatis pada: 2025-09-02 11:25:37
-🔎 Mencari video dengan kata kunci: '"demo mahasiswa" | "perampasan asset" | "tolak RUU"'...
+🚀 Memulai proses monitoring & analisis otomatis pada: 2025-09-03 11:00:44
+🔎 Mencari video dengan kata kunci: '"dalang demo" | "perampasan asset" | "demo rusuh"'...
 ✅ Berhasil menemukan 15 ID video.
-   -> Mengambil komentar dari video ID: czZjMAk-xMc
-   -> Mengambil komentar dari video ID: 68KEGbm5Lmg
-   -> Mengambil komentar dari video ID: FtoN30cwx50
-   -> Mengambil komentar dari video ID: 0It7eUFeYkU
-   -> Mengambil komentar dari video ID: qDj22PwHNfU
-   -> Mengambil komentar dari video ID: TIBHY01h51M
-   -> Mengambil komentar dari video ID: b5-QacYFE2I
-   -> Mengambil komentar dari video ID: YqqTcBUgrHU
-   -> Mengambil komentar dari video ID: UmNCQ9UYOe8
-   -> Mengambil komentar dari video ID: 5bxaTCPhVVc
-   -> Mengambil komentar dari video ID: b_6hFTc33w0
-   -> Mengambil komentar dari video ID: NzlPsu5RXcs
-   -> Mengambil komentar dari video ID: 5vilQLR5DwE
-   -> Mengambil komentar dari video ID: cripOZt5KTc
-   -> Mengambil komentar dari video ID: 8D6GoxX5jlc
-Berhasil mengumpulkan total 1719 komentar.
+   -> Mengambil komentar dari video ID: gpHLhjkMR0E
+   -> Mengambil komentar dari video ID: 3FwSeBfl61g
+   -> Mengambil komentar dari video ID: ZuWcCzta-2I
+   -> Mengambil komentar dari video ID: WYRvtIWtYeQ
+   -> Mengambil komentar dari video ID: JdYzGmX-X94
+   -> Mengambil komentar dari video ID: ZqOrvIX5mc4
+   -> Mengambil komentar dari video ID: oW2wjukuYXY
+   -> Mengambil komentar dari video ID: VE04ddub35Y
+   -> Mengambil komentar dari video ID: bNguNSqnvWQ
+   -> Mengambil komentar dari video ID: rGXNbCjIDOo
+Berhasil mengumpulkan total 20037 komentar.
 🧠 Memulai analisis sentimen pada data yang di-crawl...
 WARNING:tensorflow:From C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
 
@@ -27,11 +22,11 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'write'
 Call stack:
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 154, in <module>
+  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 155, in <module>
     main()
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 145, in main
+  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 146, in main
     df_analyzed = analyze_sentiment_in_batch(df_comments)
-  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 43, in analyze_sentiment_in_batch
+  File "E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\crawler_otomatis_pencari.py", line 44, in analyze_sentiment_in_batch
     sentiment_analyzer = transformers.pipeline(
   File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\__init__.py", line 1178, in pipeline
     return pipeline_class(model=model, framework=framework, task=task, **kwargs)
@@ -43,6 +38,6 @@ Message: 'Device set to use cpu'
 Arguments: ()
    Model AI berhasil dimuat.
 ✅ Analisis sentimen selesai.
-Menghapus tabel 'comments' lama dan menyimpan 1719 data baru...
+Menghapus tabel 'comments' lama dan menyimpan 20037 data baru...
 ✅ Data berhasil disimpan di 'E:\tugas kuliah\SEMESTER 7 MAGANG\KONTEN KU\analisissentimennetizenterkaitkericuhan\youtube_data.db'
 ✨ Proses monitoring & analisis selesai.
