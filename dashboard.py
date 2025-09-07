@@ -67,7 +67,7 @@ base_stopwords = set(stopword_factory.get_stop_words())
 extra_stopwords = {
     "yang", "ini", "itu", "ada", "dari", "untuk", "dengan", "juga",
     "pada", "sudah", "akan", "kami", "kita", "saya", "nya", "agar",
-    "bisa", "tidak", "tak", "tdk", "ga", "gak", "aja", "lagi", "kok",
+    "bisa", "tidak", "tak", "tdk", "ga", "gak", "aja", "lagi", "kok", "apa","yang","yg","lu","gk",
     "yg", "dr", "dlm", "trs", "jd", "lah", "si", "nih", "loh", "deh","jangan","klu","kalo","apa","semua","ayo","dgn"
 }
 all_stopwords = base_stopwords.union(extra_stopwords)
